@@ -12,7 +12,13 @@ jobs:
         with:
           node-version: '12.x'
           registry-url: 'https://registry.npmjs.org'
-      - run: npm install
-      - run: npm publish
+      - run: npm install && npm publish
+        name: Publish typescript/nestjs
+        working-directory: typescript/nestjs
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+      - run: npm install && npm publish
+        name: Publish typescript/angular
+        working-directory: typescript/angular
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
