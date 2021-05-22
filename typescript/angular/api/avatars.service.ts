@@ -20,16 +20,13 @@ import { Observable }                                        from 'rxjs';
 
 import { BASE_PATH, COLLECTION_FORMATS }                     from '../variables';
 import { Configuration }                                     from '../configuration';
-import {
-    AvatarsServiceInterface
-} from './avatars.serviceInterface';
 
 
 
 @Injectable({
   providedIn: 'root'
 })
-export class AvatarsService implements AvatarsServiceInterface {
+export class AvatarsService {
 
     protected basePath = 'https://api.sleeper.app/v1';
     public defaultHeaders = new HttpHeaders();

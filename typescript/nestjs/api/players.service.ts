@@ -17,11 +17,10 @@ import { Observable } from 'rxjs';
 import { Player } from '../model/player';
 import { TrendingPlayer } from '../model/trendingPlayer';
 import { Configuration } from '../configuration';
-import { PlayersServiceInterface } from './players.serviceInterface';
 
 
 @Injectable()
-export class PlayersService implements PlayersServiceInterface {
+export class PlayersService {
 
     protected basePath = 'https://api.sleeper.app/v1';
     public defaultHeaders = new Map()

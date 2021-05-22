@@ -23,16 +23,13 @@ import { TradedPick } from '../model/models';
 
 import { BASE_PATH, COLLECTION_FORMATS }                     from '../variables';
 import { Configuration }                                     from '../configuration';
-import {
-    DraftsServiceInterface
-} from './drafts.serviceInterface';
 
 
 
 @Injectable({
   providedIn: 'root'
 })
-export class DraftsService implements DraftsServiceInterface {
+export class DraftsService {
 
     protected basePath = 'https://api.sleeper.app/v1';
     public defaultHeaders = new HttpHeaders();

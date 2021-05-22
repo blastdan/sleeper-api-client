@@ -22,16 +22,13 @@ import { TrendingPlayer } from '../model/models';
 
 import { BASE_PATH, COLLECTION_FORMATS }                     from '../variables';
 import { Configuration }                                     from '../configuration';
-import {
-    PlayersServiceInterface
-} from './players.serviceInterface';
 
 
 
 @Injectable({
   providedIn: 'root'
 })
-export class PlayersService implements PlayersServiceInterface {
+export class PlayersService {
 
     protected basePath = 'https://api.sleeper.app/v1';
     public defaultHeaders = new HttpHeaders();

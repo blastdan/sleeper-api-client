@@ -16,11 +16,10 @@ import { AxiosResponse } from 'axios';
 import { Observable } from 'rxjs';
 import { User } from '../model/user';
 import { Configuration } from '../configuration';
-import { UserServiceInterface } from './user.serviceInterface';
 
 
 @Injectable()
-export class UserService implements UserServiceInterface {
+export class UserService {
 
     protected basePath = 'https://api.sleeper.app/v1';
     public defaultHeaders = new Map()

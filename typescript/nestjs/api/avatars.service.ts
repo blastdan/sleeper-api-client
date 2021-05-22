@@ -15,11 +15,10 @@ import { HttpService, Inject, Injectable, Optional } from '@nestjs/common';
 import { AxiosResponse } from 'axios';
 import { Observable } from 'rxjs';
 import { Configuration } from '../configuration';
-import { AvatarsServiceInterface } from './avatars.serviceInterface';
 
 
 @Injectable()
-export class AvatarsService implements AvatarsServiceInterface {
+export class AvatarsService {
 
     protected basePath = 'https://api.sleeper.app/v1';
     public defaultHeaders = new Map()

@@ -26,16 +26,13 @@ import { UserInLeague } from '../model/models';
 
 import { BASE_PATH, COLLECTION_FORMATS }                     from '../variables';
 import { Configuration }                                     from '../configuration';
-import {
-    LeaguesServiceInterface
-} from './leagues.serviceInterface';
 
 
 
 @Injectable({
   providedIn: 'root'
 })
-export class LeaguesService implements LeaguesServiceInterface {
+export class LeaguesService {
 
     protected basePath = 'https://api.sleeper.app/v1';
     public defaultHeaders = new HttpHeaders();

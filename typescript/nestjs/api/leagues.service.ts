@@ -21,11 +21,10 @@ import { SportState } from '../model/sportState';
 import { TradedPick } from '../model/tradedPick';
 import { UserInLeague } from '../model/userInLeague';
 import { Configuration } from '../configuration';
-import { LeaguesServiceInterface } from './leagues.serviceInterface';
 
 
 @Injectable()
-export class LeaguesService implements LeaguesServiceInterface {
+export class LeaguesService {
 
     protected basePath = 'https://api.sleeper.app/v1';
     public defaultHeaders = new Map()

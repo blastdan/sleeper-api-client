@@ -21,16 +21,13 @@ import { User } from '../model/models';
 
 import { BASE_PATH, COLLECTION_FORMATS }                     from '../variables';
 import { Configuration }                                     from '../configuration';
-import {
-    UserServiceInterface
-} from './user.serviceInterface';
 
 
 
 @Injectable({
   providedIn: 'root'
 })
-export class UserService implements UserServiceInterface {
+export class UserService {
 
     protected basePath = 'https://api.sleeper.app/v1';
     public defaultHeaders = new HttpHeaders();
