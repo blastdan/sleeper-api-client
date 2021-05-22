@@ -1,5 +1,5 @@
 {
-  "name": "sleeper-api-client",
+  "name": "sleeper-api-tsclient",
   "version": "0.0.1",
   "description": "Typescript client for the sleeper api",
   "author": "blastdan",
