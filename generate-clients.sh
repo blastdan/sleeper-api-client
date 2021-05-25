@@ -1,6 +1,6 @@
 #! /bin/sh
 
-NPM_VERSION=0.0.2
+NPM_VERSION=0.0.3
 NPM_DESCRIPTION="Sleeper Api Client that was auto generated from an OpenAPi Specification"
 NPM_AUTHOR=blastdan
 
