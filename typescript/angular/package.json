@@ -1,6 +1,6 @@
 {
   "name": "sleeper-api-angular-client",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Sleeper Api Client that was auto generated from an OpenAPi Specification",
   "author": "blastdan",
   "keywords": [

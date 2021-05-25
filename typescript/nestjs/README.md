@@ -1,4 +1,4 @@
-## sleeper-api-nestjs-client@0.0.2
+## sleeper-api-nestjs-client@0.0.3
 
 ### Building
 
