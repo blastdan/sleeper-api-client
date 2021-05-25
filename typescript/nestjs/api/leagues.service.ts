@@ -72,7 +72,7 @@ export class LeaguesService {
         // to determine the Content-Type header
         const consumes: string[] = [
         ];
-        return this.httpClient.get<League>(`${this.basePath}/league/${encodeURIComponent(String(league_id))}`,
+        return this.httpClient.get<League>(`${this.basePath}/league/${encodeURIComponent(String(leagueId))}`,
             {
                 withCredentials: this.configuration.withCredentials,
                 headers: headers
@@ -107,7 +107,7 @@ export class LeaguesService {
         // to determine the Content-Type header
         const consumes: string[] = [
         ];
-        return this.httpClient.get<Array<object>>(`${this.basePath}/league/${encodeURIComponent(String(league_id))}/loses_bracket`,
+        return this.httpClient.get<Array<object>>(`${this.basePath}/league/${encodeURIComponent(String(leagueId))}/loses_bracket`,
             {
                 withCredentials: this.configuration.withCredentials,
                 headers: headers
@@ -147,7 +147,7 @@ export class LeaguesService {
         // to determine the Content-Type header
         const consumes: string[] = [
         ];
-        return this.httpClient.get<Array<Matchup>>(`${this.basePath}/league/${encodeURIComponent(String(league_id))}/matchups/${encodeURIComponent(String(week))}`,
+        return this.httpClient.get<Array<Matchup>>(`${this.basePath}/league/${encodeURIComponent(String(leagueId))}/matchups/${encodeURIComponent(String(week))}`,
             {
                 withCredentials: this.configuration.withCredentials,
                 headers: headers
@@ -182,7 +182,7 @@ export class LeaguesService {
         // to determine the Content-Type header
         const consumes: string[] = [
         ];
-        return this.httpClient.get<Array<Roster>>(`${this.basePath}/league/${encodeURIComponent(String(league_id))}/rosters`,
+        return this.httpClient.get<Array<Roster>>(`${this.basePath}/league/${encodeURIComponent(String(leagueId))}/rosters`,
             {
                 withCredentials: this.configuration.withCredentials,
                 headers: headers
@@ -217,7 +217,7 @@ export class LeaguesService {
         // to determine the Content-Type header
         const consumes: string[] = [
         ];
-        return this.httpClient.get<Array<TradedPick>>(`${this.basePath}/league/${encodeURIComponent(String(league_id))}/traded_picks`,
+        return this.httpClient.get<Array<TradedPick>>(`${this.basePath}/league/${encodeURIComponent(String(leagueId))}/traded_picks`,
             {
                 withCredentials: this.configuration.withCredentials,
                 headers: headers
@@ -257,7 +257,7 @@ export class LeaguesService {
         // to determine the Content-Type header
         const consumes: string[] = [
         ];
-        return this.httpClient.get<Array<object>>(`${this.basePath}/league/${encodeURIComponent(String(league_id))}/transactions/${encodeURIComponent(String(round))}`,
+        return this.httpClient.get<Array<object>>(`${this.basePath}/league/${encodeURIComponent(String(leagueId))}/transactions/${encodeURIComponent(String(round))}`,
             {
                 withCredentials: this.configuration.withCredentials,
                 headers: headers
@@ -292,7 +292,7 @@ export class LeaguesService {
         // to determine the Content-Type header
         const consumes: string[] = [
         ];
-        return this.httpClient.get<Array<UserInLeague>>(`${this.basePath}/league/${encodeURIComponent(String(league_id))}/users`,
+        return this.httpClient.get<Array<UserInLeague>>(`${this.basePath}/league/${encodeURIComponent(String(leagueId))}/users`,
             {
                 withCredentials: this.configuration.withCredentials,
                 headers: headers
@@ -327,7 +327,7 @@ export class LeaguesService {
         // to determine the Content-Type header
         const consumes: string[] = [
         ];
-        return this.httpClient.get<Array<object>>(`${this.basePath}/league/${encodeURIComponent(String(league_id))}/winners_bracket`,
+        return this.httpClient.get<Array<object>>(`${this.basePath}/league/${encodeURIComponent(String(leagueId))}/winners_bracket`,
             {
                 withCredentials: this.configuration.withCredentials,
                 headers: headers
@@ -407,7 +407,7 @@ export class LeaguesService {
         // to determine the Content-Type header
         const consumes: string[] = [
         ];
-        return this.httpClient.get<Array<League>>(`${this.basePath}/user/${encodeURIComponent(String(user_id))}/leagues/${encodeURIComponent(String(sport))}/${encodeURIComponent(String(season))}`,
+        return this.httpClient.get<Array<League>>(`${this.basePath}/user/${encodeURIComponent(String(userId))}/leagues/${encodeURIComponent(String(sport))}/${encodeURIComponent(String(season))}`,
             {
                 withCredentials: this.configuration.withCredentials,
                 headers: headers

@@ -69,7 +69,7 @@ export class DraftsService {
         // to determine the Content-Type header
         const consumes: string[] = [
         ];
-        return this.httpClient.get<Array<Draft>>(`${this.basePath}/draft/${encodeURIComponent(String(draft_id))}`,
+        return this.httpClient.get<Array<Draft>>(`${this.basePath}/draft/${encodeURIComponent(String(draftId))}`,
             {
                 withCredentials: this.configuration.withCredentials,
                 headers: headers
@@ -104,7 +104,7 @@ export class DraftsService {
         // to determine the Content-Type header
         const consumes: string[] = [
         ];
-        return this.httpClient.get<Array<Pick>>(`${this.basePath}/draft/${encodeURIComponent(String(draft_id))}/picks`,
+        return this.httpClient.get<Array<Pick>>(`${this.basePath}/draft/${encodeURIComponent(String(draftId))}/picks`,
             {
                 withCredentials: this.configuration.withCredentials,
                 headers: headers
@@ -139,7 +139,7 @@ export class DraftsService {
         // to determine the Content-Type header
         const consumes: string[] = [
         ];
-        return this.httpClient.get<Array<TradedPick>>(`${this.basePath}/draft/${encodeURIComponent(String(draft_id))}/traded_picks`,
+        return this.httpClient.get<Array<TradedPick>>(`${this.basePath}/draft/${encodeURIComponent(String(draftId))}/traded_picks`,
             {
                 withCredentials: this.configuration.withCredentials,
                 headers: headers
@@ -174,7 +174,7 @@ export class DraftsService {
         // to determine the Content-Type header
         const consumes: string[] = [
         ];
-        return this.httpClient.get<Array<Draft>>(`${this.basePath}/league/${encodeURIComponent(String(league_id))}/drafts`,
+        return this.httpClient.get<Array<Draft>>(`${this.basePath}/league/${encodeURIComponent(String(leagueId))}/drafts`,
             {
                 withCredentials: this.configuration.withCredentials,
                 headers: headers
@@ -219,7 +219,7 @@ export class DraftsService {
         // to determine the Content-Type header
         const consumes: string[] = [
         ];
-        return this.httpClient.get<Array<Draft>>(`${this.basePath}/user/${encodeURIComponent(String(user_id))}/drafts/${encodeURIComponent(String(sport))}/${encodeURIComponent(String(season))}`,
+        return this.httpClient.get<Array<Draft>>(`${this.basePath}/user/${encodeURIComponent(String(userId))}/drafts/${encodeURIComponent(String(sport))}/${encodeURIComponent(String(season))}`,
             {
                 withCredentials: this.configuration.withCredentials,
                 headers: headers

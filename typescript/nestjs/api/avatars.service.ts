@@ -65,7 +65,7 @@ export class AvatarsService {
         // to determine the Content-Type header
         const consumes: string[] = [
         ];
-        return this.httpClient.get<any>(`${this.basePath}/avatars/${encodeURIComponent(String(avatar_id))}`,
+        return this.httpClient.get<any>(`${this.basePath}/avatars/${encodeURIComponent(String(avatarId))}`,
             {
                 withCredentials: this.configuration.withCredentials,
                 headers: headers
@@ -99,7 +99,7 @@ export class AvatarsService {
         // to determine the Content-Type header
         const consumes: string[] = [
         ];
-        return this.httpClient.get<any>(`${this.basePath}/avatars/thumbs/${encodeURIComponent(String(avatar_id))}`,
+        return this.httpClient.get<any>(`${this.basePath}/avatars/thumbs/${encodeURIComponent(String(avatarId))}`,
             {
                 withCredentials: this.configuration.withCredentials,
                 headers: headers

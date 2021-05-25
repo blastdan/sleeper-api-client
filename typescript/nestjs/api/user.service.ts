@@ -67,7 +67,7 @@ export class UserService {
         // to determine the Content-Type header
         const consumes: string[] = [
         ];
-        return this.httpClient.get<User>(`${this.basePath}/user/${encodeURIComponent(String(user_id))}`,
+        return this.httpClient.get<User>(`${this.basePath}/user/${encodeURIComponent(String(userId))}`,
             {
                 withCredentials: this.configuration.withCredentials,
                 headers: headers
